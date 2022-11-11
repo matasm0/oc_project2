@@ -2,6 +2,8 @@
 {
     padding: 0px;
     margin: 0px;
+
+    box-sizing: border-box;
 }
 
 header, footer, main
@@ -12,17 +14,47 @@ header, footer, main
 /* Just padding everything! */
 .header-link
 {
-    padding: 20px 0px;
+    padding: 4vw 0px;
+
+    color: blue;
+}
+
+.header-link:hover
+{
+    background-color: violet;
 }
 
 .header-links, .logo, .search, .results, .activities
 {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 4vw;
+    padding-left: 4vw;
 }
 
 
 /*                          */
+
+
+.small-text
+{
+    font-size: 20px;
+}
+
+.med-text
+{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.big-text
+{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.name-text
+{
+    font-size: 26px;
+}
 
 header 
 {
@@ -65,6 +97,13 @@ main
     justify-content: space-between;
 }
 
+.hook
+{
+    display: flex;
+    flex-direction: column;
+
+}
+
 .search-bar
 {
     border: 2px solid green;
@@ -75,6 +114,7 @@ main
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .sb-icon 
@@ -98,6 +138,11 @@ main
     padding: 20px;
 
     color: white;
+}
+
+.sb-submit:hover
+{
+    background-color: rgb(0, 100, 255);
 }
 
 .filters
@@ -133,6 +178,11 @@ main
     border-radius: 20px;
 
     padding: 10px;
+}
+
+.filter-link:hover
+{
+    background-color: lightgrey;
 }
 
 .info 
@@ -203,6 +253,11 @@ main
 
 }
 
+.a-card:hover
+{
+    background-color: lightgrey;
+}
+
 .most-popular
 {
     border: 2px dashed blue;
@@ -243,6 +298,11 @@ main
 
     width: 15vw;
     height: 15vh;
+}
+
+.mp-card:hover
+{
+    background-color: lightgrey;
 }
 
 .activities
