@@ -201,14 +201,38 @@ main
 .filter-link
 {
     border: 1px solid lightgray;
-    border-radius: 20px;
+    border-radius: 30px;
 
-    padding: 10px;
+    /* padding: 10px; */
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
 .filter-link:hover
 {
     background-color: whitesmoke;
+}
+
+.filter-text
+{
+    padding: 0px 20px;
+}
+
+.filter-icon
+{
+    width: 60px;
+    height: 60px;
+
+    border: 2px solid lightblue;
+    border-radius: 50px;
+    background-color: lightblue;
+
+    text-align: center;
+
+    padding: 14px;
+
 }
 
 .info 
@@ -273,11 +297,12 @@ main
 {
     border: 2px solid lightgray;
     border-radius: 20px;
-
+    background-color: white;
 
     width: 15vw;
     height: 25vh;
 
+    padding: 5px;
 }
 
 .a-card:hover
@@ -287,8 +312,8 @@ main
 
 .a-img
 {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 
     width: 100%;
     height: 65%;
