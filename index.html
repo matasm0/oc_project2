@@ -15,8 +15,8 @@
     <header>
         <img alt="logo" class="logo" src="images/logo/Booki.png">
         <div class="header-links">
-            <a href="" class="header-link small-text" id="hl-accomodations">Accomodations</a>
-            <a href="" class="header-link small-text" id="hl-activities">Activities</a>
+            <a href="#accomodations" class="header-link small-text" id="hl-accomodations">Accomodations</a>
+            <a href="#activities" class="header-link small-text" id="hl-activities">Activities</a>
         </div>
     </header>
     <main>
@@ -30,7 +30,9 @@
                 </div>
             </div>
             <div class="search-bar">
-                <div class="sb-icon">!</div>
+                <div class="sb-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
                 <div class="sb-field med-text">Marseille, France</div>
                 <button class="sb-submit med-text">Search</button>
             </div>
@@ -40,19 +42,19 @@
                     <div class="filter-link med-text" id="f-low-cost">
                         <div class="filter-text">Low cost</div>
                         <div class="filter-icon">
-                            <i class="fa-solid fa-money-bill"></i>
+                            <i class="fa fa-money-bill-wave"></i>
                         </div>
                     </div>
                     <div class="filter-link med-text" id="f-family-friendly">
                         <div class="filter-text">Family-friendly</div>
                         <div class="filter-icon">
-                            <i class="fa fa-teddy-bear"></i>
+                            <i class="fa-solid fa-child-reaching"></i>
                         </div>
                     </div>
                     <div class="filter-link med-text" id="f-romantic">
                         <div class="filter-text">Romantic</div>
                         <div class="filter-icon">
-                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa fa-heart"></i>
                         </div>
                     </div>
                     <div class="filter-link med-text" id="f-pets-allowed">
@@ -64,49 +66,63 @@
                 </div>
             </div>
             <div class="info">
-                <div class="info-icon">i</div>
+                <div class="info-icon">
+                    <i class="fa-solid fa-info"></i>
+                </div>
                 <div class="info-text small-text">More than 500 accommodations are available in this city</div>
             </div>
         </div>
         <div class="results">
-            <div class="accomodations">
+            <div class="accomodations" id="accomodations">
                 <div class="a-text big-text">Accomodations in Marseille</div>
                 <div class="a-cards">
                     <div class="a-card">
                         <img class="a-img" src="images/hebergements//3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-                        <div class="a-card-title name-text">Auberge la Cannebiere</div>
-                        <div class="a-card-rate small-text">Night starting at <b>25€‎</b></div>
-                        <div class="a-card-rating small-text">★★★★☆</div>
+                        <div class="a-right">
+                            <div class="a-card-title name-text">Auberge la Cannebiere</div>
+                            <div class="a-card-rate small-text">Night starting at <b>25€‎</b></div>
+                            <div class="a-card-rating small-text">★★★★☆</div>
+                        </div>
                     </div>
                     <div class="a-card">
                         <img class="a-img" src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
-                        <div class="a-card-title name-text">Hotel du port</div>
-                        <div class="a-card-rate small-text">Night starting at <b>52€‎</b></div>
-                        <div class="a-card-rating small-text">★★★★★</div>
+                        <div class="a-right">
+                            <div class="a-card-title name-text">Hotel du port</div>
+                            <div class="a-card-rate small-text">Night starting at <b>52€‎</b></div>
+                            <div class="a-card-rating small-text">★★★★★</div>
+                        </div>
                     </div>
                     <div class="a-card">
                         <img class="a-img" src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg">
-                        <div class="a-card-title name-text">Les mouettes Hotel</div>
-                        <div class="a-card-rate small-text">Night starting at <b>76€‎</b></div>
-                        <div class="a-card-rating small-text">★★★★☆</div>
+                        <div class="a-right">
+                            <div class="a-card-title name-text">Les mouettes Hotel</div>
+                            <div class="a-card-rate small-text">Night starting at <b>76€‎</b></div>
+                            <div class="a-card-rating small-text">★★★★☆</div>
+                        </div> 
                     </div>
                     <div class="a-card">
                         <img class="a-img" src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
-                        <div class="a-card-title name-text">Hotel de la mer</div>
-                        <div class="a-card-rate small-text">Night starting at <b>46€‎</b></div>
-                        <div class="a-card-rating small-text">★★★☆☆</div>
+                        <div class="a-right">
+                            <div class="a-card-title name-text">Hotel de la mer</div>
+                            <div class="a-card-rate small-text">Night starting at <b>46€‎</b></div>
+                            <div class="a-card-rating small-text">★★★☆☆</div>
+                        </div>
                     </div>
                     <div class="a-card">
                         <img class="a-img" src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
-                        <div class="a-card-title name-text">Auberge Le Panier</div>
-                        <div class="a-card-rate small-text">Night starting at <b>23€‎</b></div>
-                        <div class="a-card-rating small-text">★★★★☆</div>
+                        <div class="a-right">
+                            <div class="a-card-title name-text">Auberge Le Panier</div>
+                            <div class="a-card-rate small-text">Night starting at <b>23€‎</b></div>
+                            <div class="a-card-rating small-text">★★★★☆</div>
+                        </div>
                     </div>
                     <div class="a-card">
                         <img class="a-img" src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
-                        <div class="a-card-title name-text">Hotel chez Amina</div>
-                        <div class="a-card-rate small-text">Night starting at <b>96€‎</b></div>
-                        <div class="a-card-rating small-text">★★★★★</div>
+                        <div class="a-right">
+                            <div class="a-card-title name-text">Hotel chez Amina</div>
+                            <div class="a-card-rate small-text">Night starting at <b>96€‎</b></div>
+                            <div class="a-card-rating small-text">★★★★★</div>
+                        </div>
                     </div>
                 </div>
                 <a href="" class="a-show-more med-text">Show more</a>
@@ -114,7 +130,9 @@
             <div class="most-popular">
                 <div class="label">
                     <div class="mp-text big-text">Most popular</div>
-                    <div class="mp-star">*</div>
+                    <div class="mp-star">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
                 </div>
                 <div class="mp-cards">
                     <div class="mp-card">
@@ -144,7 +162,7 @@
                 </div>
             </div>
         </div>
-        <div class="activities">
+        <div class="activities" id="activities">
             <div class="act-text big-text">Activities in Marseille</div>
             <div class="act-cards">
                 <div class="big-card">
