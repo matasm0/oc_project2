@@ -26,3 +26,26 @@ w3c validator
 
  @media at end
   - maxwidth
+
+  move from divs to other semantic (p/span/etc)
+
+  change search field to input
+
+  body 16px
+
+  liveserve site and vscode
+
+  Check prompt
+
+  Todo: 
+  All:
+    Make images smaller (for mp cards at least)
+    Logo changes size relative to width
+    minheight for recommendations
+    Make filters wrap
+    Logo clickable
+  Desktop:
+  Tablet:
+    Make activities into 2 rows of 3
+  Mobile:
+    Logo moves, not centered

@@ -7,6 +7,33 @@
     font-family: "Raleway", Arial, Helvetica, sans-serif;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.a-card, .mp-card, .big-card, .small-card, .filter-link {
+    cursor: pointer;
+}
+
+input { 
+    border-style: hidden;
+    outline: none;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+    
+:-ms-input-placeholder {
+    color: black;
+}
+    
+::-ms-input-placeholder {
+    color: black;
+}
+
 /* Just padding everything! */
 .header-link
 {
@@ -15,8 +42,10 @@
 
 .header-links, .logo, .search, .results, .activities, footer
 {
-    padding-right: 60px;
-    padding-left: 60px;
+    /* padding-right: 60px; */
+    /* padding-left: 60px; */
+    padding-right: 3vw;
+    padding-left: 3vw;
 }
 
 
@@ -32,7 +61,7 @@
 
 .small-text
 {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .med-text
@@ -49,7 +78,7 @@
 
 .name-text
 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -65,6 +94,7 @@ header
 .logo 
 {
     width: 250px;
+    height: 20px;
     height: fit-content;
     object-fit: contain;
 }
@@ -85,16 +115,16 @@ header
 
 .header-link:hover
 {
-    color: blue;
-    border-top: 3px solid blue;
+    color: #5105ff;
+    border-top: 3px solid #5105ff;
 }
 
 #hl-accomodations {
-    width: 200px;
+    width: 210px;
 }
 
 #hl-activities {
-    width: 160px;
+    width: 170px;
 }
 
 main
@@ -129,10 +159,10 @@ main
 .search-bar
 {
     border: 2px solid whitesmoke;
-    border-radius: 15px;
+    border-radius: 17px;
 
     width: 500px;
-    height: 65px;
+    height: 75px;
 
     margin: 20px 0px;
 
@@ -146,8 +176,8 @@ main
 {
     background-color: whitesmoke;
 
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
 
     height: 100%;
     width: 15%;
@@ -166,7 +196,10 @@ main
 
 .sb-submit
 {
-    background-color: blue;
+    background-color: #5105ff;
+    outline: none;
+    box-shadow: none;
+    border: none;
 
     border-top-right-radius: 13px;
     border-bottom-right-radius: 13px;
@@ -186,6 +219,10 @@ main
     background-color: rgb(0, 100, 255);
 }
 
+.fa-magnifying-glass.fa-solid {
+    display: none;
+}
+
 .filters
 {
     margin: 30px 0px;
@@ -198,6 +235,8 @@ main
 .filters-text
 {
     margin-right: 40px;
+    align-self: flex-start;
+    padding: 15px 0;
 }
 
 .filter-links
@@ -206,7 +245,9 @@ main
 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 20px;
 }
 
 
@@ -286,23 +327,23 @@ main
 
     justify-content: space-between;
 
-    height: 95vh;
+    min-height: 95vh;
 }
 
 .accomodations
 {
-    border-radius: 30px;
+    border-radius: 32px;
     background-color: whitesmoke;
 
     /* min-height: 80vh; */
-    height: 100%;   
+    /* height: 100%;    */
     width: 75%;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    padding: 50px;
+    padding: 40px 50px;
     margin-right: 45px;
 }
 
@@ -325,13 +366,17 @@ main
 
 .a-card
 {
-    /* border: 2px solid lightgray; */
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 0px 0px 18px lightgrey;
+    display: flex;
+    flex-direction: column;
 
-    width: 30%;
-    height: 46%;
+    /* border: 2px solid lightgray; */
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 2px 2px 18px lightgrey;
+
+    width: 31%;
+    /* height: 46%; */
+    height: auto; /* Why does this work?*/
     /* height: 280px; */
 
     padding: 7px;
@@ -342,13 +387,33 @@ main
     background-color: whitesmoke;
 }
 
+.fa-star {
+    font-size: 16px;
+}
+
+.fa-star.fa-solid {
+    color: #5105ff;
+    width: 14px;
+}
+
+.fa-star.fa-solid.empty {
+    color: lightgray;
+}
+
+.mp-star > .fa-star {
+    color: black;
+    font-size: 24px;
+}
+
 .a-img
 {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px;
 
     width: 100%;
-    height: 60%;
+    /* height: 60%; */
+    /* height: 18vh; */
+    height: 155px;
     object-fit: cover;
 }
 
@@ -356,6 +421,7 @@ main
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
 
     padding: 10px;
 
@@ -364,23 +430,31 @@ main
 
 .a-show-more
 {
-    padding-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+    width: fit-content;
+}
+
+.a-show-more:hover {
+    color: gray;
 }
 
 .most-popular
 {
-    border-radius: 30px;
+    border-radius: 32px;
     background-color: whitesmoke;
 
     /* height: 80vh; */
-    width: 35%;
+    width: 32%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-shrink: 0;
 
 
-    padding: 50px;
+    padding: 40px 3vw;
 }
 
 .label
@@ -390,35 +464,38 @@ main
     display: flex;
     justify-content: space-between;
 
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 .mp-cards
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 
     width: 100%;
     height: 100%;
+    /* height: auto; */
 
-    gap: 40px;
+    /* gap: 5vh; */
+    gap: 6%;
 }
 
 .mp-card
 {
     /* border: 2px solid grey; */
-    border-radius: 26px;
+    border-radius: 28px;
     background-color: white;
-    box-shadow: 0px 0px 20px lightgray;
+    box-shadow: 2px 2px 7px 2px lightgray;
 
-    height: 30%;
+    height: 28%;
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 10px;
     flex-shrink: 0;
+    flex-grow: 1;
 
     padding: 7px;
 }
@@ -435,6 +512,7 @@ main
     justify-content: space-between;
 
     padding: 15px;
+    padding-right: 0;
 
     width: 50%;
 }
@@ -459,13 +537,18 @@ main
 
 .activities
 {
-    min-height: 70vh;
+    /* height: 85vh; */
     width: 100%;
 
-    margin-top: 50px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 
     display: flex;
     flex-direction: column;
+}
+
+.act-text {
+    padding-bottom: 25px;
 }
 
 .act-cards
@@ -474,25 +557,39 @@ main
     flex-direction: row;
     justify-content: space-between;
 
-    gap: 50px;
+    gap: 40px;
 }
 
 .big-card
 {
     border: 2px solid whitesmoke;
     border-radius: 30px;
+    box-shadow: 3px 2px 5px 1px whitesmoke;
 
-    width: 20vw;
-    height: 60vh;
+    width: 22vw;
+    /* height: 70vh; */
+    /* height: 600px; */
+    /* height: fit-content; */
+    height: auto;
+}
+
+.big-card:hover {
+    background-color: whitesmoke;
 }
 
 .big-card>img
 {
     border-radius: 30px 30px 0 0;
 
-    height: 90%;
+    /* height: 87%; */
+    height: 530px;
     width: 100%;
     object-fit: cover;
+}
+
+.act-card-title {
+    width: 100%;
+    padding: 20px;
 }
 
 .vert
@@ -500,24 +597,62 @@ main
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    /* height: fit-content; */
 }
 
 .small-card
 {
     border: 2px solid whitesmoke;
     border-radius: 30px;
+    box-shadow: 3px 2px 5px 1px whitesmoke;
 
-    width: 20vw;
-    height: 25vh;
+    width: 22vw;
+    /* height: 32vh; */
+    /* height: 260px; */
+}
+
+.small-card:hover {
+    background-color: whitesmoke;
+}
+
+.small-card > .act-card-title {
+    padding: 24px 20px;
 }
 
 .small-card>img
 {
     border-radius: 30px 30px 0 0;
 
-    height: 80%;
+    /* height: 70%; */
+    height: 190px;
     width: 100%;
     object-fit: cover;
+}
+
+#pomegues {
+    /* height: 37vh; */
+    /* height: 300px; */
+    height: auto;
+}
+
+#pomegues > img {
+    /* height: 75%; */
+    height: 230px;
+}
+
+#pomegues > .act-card-title {
+    padding: 23px 20px;
+}
+
+/* #frioul {
+    height: 27vh;
+    height: 240px;
+} */
+
+#frioul > img{
+    /* height: 70%; */
+    height: 170px;
 }
 
 footer
@@ -550,10 +685,15 @@ footer
 
 .link
 {
+    width: fit-content;
     padding: 10px 0;
 }
 
-@media(max-width: 1300px) and (min-width: 850px) {
+.link:hover {
+    color: gray;
+}
+
+@media(max-width: 992px) and (min-width: 768px) {
     .header-links, .logo, .search, .results, .activities, footer
     {
         padding-right: 30px;
@@ -574,7 +714,7 @@ footer
     }
 
     .results {
-        flex-direction: column;
+        flex-direction: column-reverse;
 
         height: fit-content;
     }
@@ -582,16 +722,18 @@ footer
     .accomodations {
         width: 100%;
         margin-bottom: 20px;
-        height: 90vh;
+        /* height: 90vh; */
     }
 
     .most-popular {
         flex-direction: column;
 
         width: 100%;
-        height: 50vh;
+        /* height: 50vh; */
 
         padding: 50px 30px;
+
+        margin-bottom: 50px;
     }
 
     .mp-cards {
@@ -603,10 +745,12 @@ footer
     .mp-card {
         border-radius: 20px;
         background-color: white;
-        box-shadow: 0px 0px 18px lightgrey;
+        box-shadow: 0px 0px 5px lightgray;
+
+        flex-grow: 0;
 
         width: 30%;
-        height: 80%;
+        height: auto;
         /* height: 280px; */
 
         padding: 7px;
@@ -614,28 +758,68 @@ footer
 
     .mp-img {
         border-bottom-left-radius: 0;
-        border-top-right-radius: 20px;
+        border-top-right-radius: 10px;
 
         width: 100%;
-        height: 60%;
+        height: 155px;
     }
 
     .mp-card-right {
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
-        height: 40%;
+        /* height: 50%; */
+        padding: 10px;
+        padding-right: 0;
+        
+        flex-grow: 1;
     }
 
     .activities {
         margin-bottom: 30px;
     }
 
+    .act-cards {
+        flex-wrap: wrap;
+        gap: 6vw;
+    }
+
+    .big-card > img {
+        height: 230px;
+        width: 27vw;
+    }
+
+    .big-card, .small-card {
+        width: 27vw;
+    }
+    
+    .vert {
+        flex-direction: row;
+        flex-grow: 1;
+        gap: 4.5vw;
+    }
+
+    .small-card > img {
+        height: 230px;
+        width: 27vw;
+    }
+
+    #frioul > img{
+        height: 230px;
+    }
+
     .act-text {
         margin-bottom: 30px;
     }
+
+    footer {
+        justify-content: space-between;
+        gap: 20px;
+    }
+    
+
 }
 
-@media(max-width: 850px) 
+@media(max-width: 768px) 
 {
     /* body
     {
@@ -704,6 +888,29 @@ footer
         width: 100%;
 
         margin: 45px 0;
+    }
+
+    /* .sb-field {
+        padding-right: 0;
+    } */
+
+    .fa-magnifying-glass.fa-solid {
+        display: flex;
+        background-color: #5105ff;
+        color: white;
+
+        text-align: center;
+        padding: 22px 0;
+
+        border-radius: 20px;
+
+        height: 100%;
+        width: 20%;
+        font-size: 24px;
+    }
+
+    .sb-submit {
+        display: none;
     }
 
     .filters
@@ -788,17 +995,12 @@ footer
         padding: 10px 0;
     }
 
-    .mp-card-title {
+    /* .mp-card-title {
         height: 51px;
-    }
+    } */
 
     .mp-card-rate {
         padding: 10px 0;
-    }
-
-    .mp-card-rating {
-        flex: 1;
-        padding-top: 55px; /* huh? */
     }
 
     .mp-img {
@@ -870,6 +1072,22 @@ footer
 
     .section > .link {
         width: 100vw;
+    }
+
+    .big-card > img, .small-card > img {
+        height: 30vh;
+    }
+
+    .big-card, .small-card {
+        height: auto;
+    }
+
+    #pomegues > img {
+        height: 30vh;
+    }
+
+    #frioul > img {
+        height: 30vh;
     }
     
 }
